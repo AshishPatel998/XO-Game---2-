@@ -1,48 +1,56 @@
-/* styles.css */
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+    background-image: url('https://example.com/your-background-image.jpg'); /* यहां अपनी बैकग्राउंड इमेज का URL डालें */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
 }
 
-.game-container {
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
     text-align: center;
 }
 
-.board {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
-    gap: 5px;
-    margin: 20px auto;
+label {
+    display: block;
+    margin: 10px 0 5px;
 }
 
-.cell {
-    width: 100px;
-    height: 100px;
-    background-color: white;
-    border: 2px solid #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    cursor: pointer;
-}
-
-.cell:hover {
-    background-color: #e0e0e0;
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 button {
-    margin-top: 20px;
-    padding: 10px 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: white;
     font-size: 16px;
+    cursor: pointer;
 }
 
-#status {
+button:hover {
+    background-color: #218838;
+}
+
+.response {
     margin-top: 20px;
-    font-size: 1.2em;
+    text-align: center;
 }
